@@ -13,6 +13,13 @@
 		31F1896B199402D3003CFADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F18969199402D3003CFADD /* Main.storyboard */; };
 		31F1896D199402D3003CFADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F1896C199402D3003CFADD /* Images.xcassets */; };
 		31F18979199402D3003CFADD /* app_foot_poleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F18978199402D3003CFADD /* app_foot_poleTests.swift */; };
+		BC97A44F1994152E005A9AC1 /* UserStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97A44E1994152E005A9AC1 /* UserStory.swift */; };
+		BC97A4511994193A005A9AC1 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97A4501994193A005A9AC1 /* Column.swift */; };
+		BC97A45419941B8F005A9AC1 /* UserStoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97A45319941B8F005A9AC1 /* UserStoryStore.swift */; };
+		BC97A45919941D16005A9AC1 /* RallyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97A45819941D16005A9AC1 /* RallyClient.swift */; };
+		BC97A45B1994206F005A9AC1 /* userStories.json in Resources */ = {isa = PBXBuildFile; fileRef = BC97A45A1994206F005A9AC1 /* userStories.json */; };
+		BC97A45D199421E8005A9AC1 /* columns.json in Resources */ = {isa = PBXBuildFile; fileRef = BC97A45C199421E8005A9AC1 /* columns.json */; };
+		BC97A45F1994274B005A9AC1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97A45E1994274B005A9AC1 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		31F18972199402D3003CFADD /* app-foot-poleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-foot-poleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F18977199402D3003CFADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31F18978199402D3003CFADD /* app_foot_poleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_foot_poleTests.swift; sourceTree = "<group>"; };
+		BC97A44E1994152E005A9AC1 /* UserStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStory.swift; sourceTree = SOURCE_ROOT; };
+		BC97A4501994193A005A9AC1 /* Column.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = SOURCE_ROOT; };
+		BC97A45319941B8F005A9AC1 /* UserStoryStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryStore.swift; sourceTree = "<group>"; };
+		BC97A45819941D16005A9AC1 /* RallyClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RallyClient.swift; sourceTree = "<group>"; };
+		BC97A45A1994206F005A9AC1 /* userStories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userStories.json; sourceTree = "<group>"; };
+		BC97A45C199421E8005A9AC1 /* columns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = columns.json; sourceTree = "<group>"; };
+		BC97A45E1994274B005A9AC1 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,8 @@
 		31F18960199402D3003CFADD /* app-foot-pole */ = {
 			isa = PBXGroup;
 			children = (
+				BC97A45519941CE0005A9AC1 /* Data */,
+				BC97A45219941B71005A9AC1 /* Classes */,
 				31F1898419940353003CFADD /* Models */,
 				31F189831994034C003CFADD /* Controllers */,
 				31F1898219940348003CFADD /* Views */,
@@ -132,8 +148,29 @@
 		31F1898419940353003CFADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC97A44E1994152E005A9AC1 /* UserStory.swift */,
+				BC97A4501994193A005A9AC1 /* Column.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BC97A45219941B71005A9AC1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC97A45319941B8F005A9AC1 /* UserStoryStore.swift */,
+				BC97A45E1994274B005A9AC1 /* JSON.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC97A45519941CE0005A9AC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC97A45C199421E8005A9AC1 /* columns.json */,
+				BC97A45819941D16005A9AC1 /* RallyClient.swift */,
+				BC97A45A1994206F005A9AC1 /* userStories.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F1896B199402D3003CFADD /* Main.storyboard in Resources */,
+				BC97A45D199421E8005A9AC1 /* columns.json in Resources */,
+				BC97A45B1994206F005A9AC1 /* userStories.json in Resources */,
 				31F1896D199402D3003CFADD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC97A45419941B8F005A9AC1 /* UserStoryStore.swift in Sources */,
 				31F18968199402D3003CFADD /* DetailViewController.swift in Sources */,
+				BC97A4511994193A005A9AC1 /* Column.swift in Sources */,
 				31F18966199402D3003CFADD /* MasterViewController.swift in Sources */,
+				BC97A45919941D16005A9AC1 /* RallyClient.swift in Sources */,
+				BC97A44F1994152E005A9AC1 /* UserStory.swift in Sources */,
 				31F18964199402D3003CFADD /* AppDelegate.swift in Sources */,
+				BC97A45F1994274B005A9AC1 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
