@@ -77,6 +77,9 @@
 		31F18960199402D3003CFADD /* app-foot-pole */ = {
 			isa = PBXGroup;
 			children = (
+				31F1898419940353003CFADD /* Models */,
+				31F189831994034C003CFADD /* Controllers */,
+				31F1898219940348003CFADD /* Views */,
 				31F18963199402D3003CFADD /* AppDelegate.swift */,
 				31F18965199402D3003CFADD /* MasterViewController.swift */,
 				31F18967199402D3003CFADD /* DetailViewController.swift */,
@@ -110,6 +113,27 @@
 				31F18977199402D3003CFADD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31F1898219940348003CFADD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31F189831994034C003CFADD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		31F1898419940353003CFADD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +425,7 @@
 				31F1897E199402D3003CFADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31F1897F199402D3003CFADD /* Build configuration list for PBXNativeTarget "app-foot-poleTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +434,7 @@
 				31F18981199402D3003CFADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
