@@ -17,19 +17,12 @@ class RallyClient {
         
     }
     
-    func userStories() -> [UserStory] {
-        return parseUserStoriesFromJson(userStoryJsonString());
+    func userStories() -> String {
+        return userStoryJsonString();
     }
     
-    func columns() -> [Column] {
-        return parseColumnsFromJson(columnJsonString());
-    }
-    
-    func parseUserStoriesFromJson(jsonString:String) -> [UserStory] {
-        var stories = JSON.parse(jsonString);
-        for (index, storyData) in stories {
-            UserStoryStore.add(UserStory(storyData["ObjectID"], storyData["Name"], storyData["Description"], storyData["Owner"]));
-        }
+    func columns() -> String {
+        return columnJsonString();
     }
     
     func parseColumnsFromJson(jsonString:String) -> [Column] {

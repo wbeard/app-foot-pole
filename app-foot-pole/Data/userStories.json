@@ -1,20 +1,20 @@
 [
   {
-    "name": "",
-    "description": "",
-    "objectId": "",
-    "owner": ""
+    "name": "A",
+    "description": "A description",
+    "objectId": "1",
+    "owner": "M Krieg"
   },
   {
-    "name": "",
-    "description": "",
-    "objectId": "",
-    "owner": ""
+    "name": "B",
+    "description": "B description",
+    "objectId": "2",
+    "owner": "K Mrieg"
   },
   {
-    "name": "",
-    "description": "",
-    "objectId": "",
-    "owner": ""
+    "name": "C",
+    "description": "C Description",
+    "objectId": "3",
+    "owner": "R Kmieg"
   }
 ]

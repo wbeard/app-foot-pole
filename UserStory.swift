@@ -9,15 +9,15 @@
 import Foundation
 
 class UserStory {
-    let objectId: Int32;
+    let objectId: String;
     let name: String;
     let description: String;
     let owner: String;
     
-    init(_objectId:Int32, _name:String, _description:String, _owner:String)  {
-        self.objectId = _objectId;
-        self.name = _name;
-        self.description = _description;
-        self.owner = _owner;
+    init(data:Dictionary<String, String>)  {
+        self.objectId = data["objectId"]!;
+        self.name = data["name"]!;
+        self.description = data["description"]!;
+        self.owner = data["owner"]!;
     }
 }

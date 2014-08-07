@@ -11,6 +11,10 @@ import Foundation
 class UserStoryStore {
     var userStories = [UserStory]();
     
+    init() {
+        
+    }
+    
     func query() -> [UserStory] {
         return userStories;
     }
@@ -19,12 +23,16 @@ class UserStoryStore {
         userStories.append(story);
     }
     
-    init(jsonString:String) {
-        userStories = initWithJson(jsonString);
-    }
-    
-    func initWithJson(jsonString:String) -> [UserStory] {
-        //do stuff and return things;
+    func fetchAll(jsonString:String)  {
+        var stories = JSON.parse(jsonString);
+        
+        for (index, storyData) in stories {
+            let userStory = UserStory(storyData);
+           self.add(userStory);
+            //println(index);
+            //println(storyData);
+        }
+        
     }
     
 }
